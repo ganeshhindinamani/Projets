@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+:root {
+  --primary-color: #6cc091;
+  --secondary-colo: #f4f4f4;
+  --dark-color: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 1.5rem;
+  height: 10rem;
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #f4f4f4;
+}
+.navbar .flex {
+  justify-content: space-between;
+  height: 100%;
+  border-bottom: 1px solid #fff;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar li {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  color: #f4f4f4;
+  background: linear-gradient(
+      135deg,
+      rgba(70, 70, 86, 0.8) 0%,
+      rgba(70, 70, 86, 0.8) 100%
+    ),
+    url("../images/banner.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .container {
+  height: 100%;
+}
+
+.hero h1 {
+  font-family: "Lobster";
+  /* font-family: "Monoton"; */
+  transform: translateY(20rem);
+  font-weight: 400;
+}
+
+.hero .flex {
+  height: 60%;
+  align-items: flex-end;
+}
+
+.hero .icon-card {
+  padding: 0 8rem;
+}
+
+.hero .icon-card:not(:first-child) {
+  border-left: 1px solid #fff;
+}
+
+.hero .icon-card p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.hero i {
+  color: #6cc091;
+}
+
+/* Skills */
+.skills {
+}
+
+.skills .image-container {
+  width: 20rem;
+  display: inline-block;
+}
+
+.skills img {
+  border-radius: 50%;
+}
+
+.skills h2 {
+  width: 40%;
+  margin: 2rem auto;
+}
+
+.skills p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #999;
+}
+
+.skills a {
+  color: #333;
+}
+
+/* form */
+.form {
+}
+
+.form .flex {
+  justify-content: space-between;
+}
+.form label {
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 1rem 0.5rem;
+}
+.form input:not([type="submit"]) {
+  display: block;
+  width: 40rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: #f9f9f9a8;
+}
+.form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: #f9f9f9a8;
+  padding: 1rem;
+}
+
+.form .button-center {
+  text-align: center;
+}
+
+.form .button-center input {
+  border: 2px #f4f4f4 solid;
+  color: #f4f4f4;
+}
